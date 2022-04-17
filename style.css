@@ -1,3 +1,36 @@
 body {
     background: rgb(144, 144, 152);
+    overflow-x: hidden;
+    background-size: cover;
+    vertical-align: baseline;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+header {
+    background-color: #d3d3d3;
+}
+
+#main-header {
+    text-align: center;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+nav a {
+    margin: 20px;
+    color: #fff;
+}
+
+#main-header h1 {
+    color: #fff;
+    font-size: 30px, 200px;
+}
+
+
+#about {
+    background-color: #fff;
 }
