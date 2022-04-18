@@ -1,12 +1,40 @@
 const h2 = document.createElement("h2");
-h2.textContent = "About";
+h2.textContent = "About Sushi";
 h2.setAttribute('id', 'about');
 
-document.querySelector("div").appendChild(h2);
+document.querySelector("section").appendChild(h2);
 
 
-const secondH2 = document.createElement("h2");
-secondH2.textContent = "Tutorial";
-secondH2.setAttribute('id', 'how-to');
+//This is for the header sticky scroll
+window.onscroll = function() {scrollFunction()};
 
-document.querySelector("div").appendChild(h2);
+const header = document.getElementById("main-header");
+const sticky = header.offsetTop;
+
+function scrollFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    }   else {
+        header.classList.remove("sticky");
+    }
+}
+
+
+
+
+
+//this is for auto slideshow in 3rd box
+const autoSlide = 0;
+carousel();
+
+function carousel() {
+  let i;
+  let x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  autoSlide++;
+  if (autoSlide > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000);
+}

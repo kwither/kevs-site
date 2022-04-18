@@ -3,23 +3,32 @@
     <head>
         <title>Kevs Site</title>
         <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header id="main-header">
             <h1>How To Make Sushi</h1>
-            <nav>
-                <a href="">About</a>
-                <a href="">How To</a>
-                <a href="">Types</a>
+            <nav class="nav-bar">
+                <a href="#about" class="nav-button">About</a>
+                <a href="#how-to" class="nav-button">How To</a>
+                <a href="#types" class="nav-button">Types</a>
             </nav>
         </header>
 
-        <div id="about">
+        <section id="about">
             <script src="script.js"></script>
             <p>A brief history</p>
-        </div>
+            <p>More on sushi</p>
+            <img id="about-image" src="" />
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </section>
 
-        <div id="how-to">
+        <section id="how-to">
             <h2>Tutorial</h2>
             <p>Step by step tutorial</p>
             <ol>
@@ -27,11 +36,18 @@
                 <li></li>
                 <li></li>
             </ol>
-        </div>
+        </section>
 
         <div id="types">
             <h2>Different Types of Sushi</h2>
-            <img> <!--Try for 5 images that cycle through and each w/ their own caption-->
+            <section>
+                <img class="mySlides" src="" style="width:75%">
+                <img class="mySlides" src="" style="width:75%">
+                <img class="mySlides" src="" style="width:75%">
+                <img class="mySlides" src="" style="width:75%">
+                <img class="mySlides" src="" style="width:75%">
+            </section>
+                <!--Section for 5 images that cycle through and each w/ their own caption-->
             <table>
                 <!--6x2, coloum = names of 5 types, row = english known name-->
             </table>
