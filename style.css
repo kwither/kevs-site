@@ -2,25 +2,26 @@ body {
     background: rgb(144, 144, 152);
     overflow-x: hidden;
     background-size: cover;
-    vertical-align: baseline;
-    background-repeat: no-repeat;
     background-position: top;
     margin: auto;
     padding: auto;
     max-width: 800px;
+    font-family: 'Courier New', Courier, sans-serif;    
 }
 
 #main-header {
     text-align: center;
     list-style-type: none;
-    max-width: 800px;
+    max-width: 100%;
     overflow: hidden;
     background-color: #000;
     padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
 #main-header nav a {
-    max-width: 800px;
+    max-width: 100%;
     color: #d3d3d3;
     margin: 5px;
     padding: 10px;
@@ -34,30 +35,25 @@ body {
     margin: 5px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 87%;
-}
-
-.sticky + #about {
-    padding-top: 102px;
-}
 
 
 
 #about {
-    background-color: #fff;
     text-align: center;
-    margin: 0;
+    margin: 0px;
     padding: 5px;
     overflow: hidden;
+    background-image: url(sushi-2white-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
 
 #about p {
     text-align: left;
     text-indent: 0em;
     margin: 10px;
+    font-weight: 500;
 }
 
 #about h4 {
@@ -66,21 +62,14 @@ body {
     margin: 10px;
 }
 
-#about-image {
-    position: fixed;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
 #about table {
     width: 100%;
-    border: 1px solid black;
 }
 
 #about tr, th, td {
-    border: 1px solid black;
+    border: 3px solid black;
 }
+
 
 
 
@@ -90,12 +79,21 @@ body {
     margin: 0;
     padding: 5px;
     overflow: hidden;
+    background-image: url(sushi-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #how-to p {
     text-align: left;
     text-indent: 1em;
 }
+
+#about-image {
+    width: 100%;
+    
+}
+
 
 
 

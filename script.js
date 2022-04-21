@@ -18,7 +18,7 @@ function scrollFunction() {
         header.classList.remove("sticky");
     }
 }
-
+//end sticky header scroll code
 
 
 
