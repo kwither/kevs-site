@@ -20,21 +20,3 @@ function scrollFunction() {
 }
 //end sticky header scroll code
 
-
-
-
-//this is for auto slideshow in 3rd box
-const autoSlide = 0;
-carousel();
-
-function carousel() {
-  let i;
-  let x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  autoSlide++;
-  if (autoSlide > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 5000);
-}
